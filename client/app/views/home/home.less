@@ -1,0 +1,151 @@
+#home {
+  >.row {
+    width: 100%;
+
+    >.col {
+      float: left;
+      padding: 10px 15px;
+
+      &.col-left {
+        padding-left: 0px;
+        width: 270px;
+
+        .calendar {
+          .border-radius(4px);
+          border: 1px solid #F7901E;
+          margin-top: 10px;
+          padding-bottom: 5px;
+          width: 100%;
+
+          table {
+            width: 100%;
+
+            tr {
+              &.header {
+                background-color: #F7901E;
+                width: calc(~'100% - 10px');
+
+                td {
+                  padding: 5px;
+
+                  > div {
+                    display: inline-block;
+                    vertical-align: middle;
+
+                    &.icon {
+                      background-image: url('../assets/images/calendar-head.jpg');
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                      height: 18px;
+                      width: 18px;
+                    }
+
+                    &.text {
+                      color:#FFF;
+                      font-size: 14px;
+                      line-height: 18px;
+                      width: calc(~'100% - 22px');
+                    }
+                  }
+                }
+              }
+
+              &.detail {
+                background-color: #FFF;
+                width: 100%;
+
+                td {
+                  border-top: 1px solid #F7901E;
+                  padding: 5px;
+
+                  &.date {
+                    background-color: #FFFEE8;
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding-right: 0px;
+                    width: 56px;
+                  }
+
+                  &.text {
+                    color:#515151;
+                    font-size: 14px;
+                    line-height: 20px;
+                    width: calc(~'100% - 60px');
+
+                    &.special {
+                      padding-bottom: 0px;
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &.col-center {
+        width: calc(~'100% - 560px');
+
+        p { color: #667265; }
+      }
+
+      &.col-right {
+        padding-right: 0px;
+        width: 230px;
+
+        .img-bulb {
+          background-image: url('../assets/images/left_bg.jpg');
+          background-position: center center;
+          background-repeat: no-repeat;
+          height: 250px;
+          margin: 0 auto;
+          width: 214px;
+        }
+
+        a.block {
+          background-position: center center;
+          background-repeat: no-repeat;
+          display: block;
+          margin-bottom: 10px;
+
+          &.course-01 {
+            background-image: url('../assets/images/course_01_music_for_children.gif');
+            height: 134px;
+            width: 228px;
+          }
+
+          &.course-02 {
+            background-image: url('../assets/images/course_02_classical_music.gif');
+            height: 131px;
+            width: 228px;
+          }
+
+          &.course-03 {
+            background-image: url('../assets/images/course_03_contemporary_music.gif');
+            height: 125px;
+            width: 228px;
+          }
+
+          &.facebook {
+            background-image: url('../assets/images/fb_fanpage_1.jpg');
+            height: 110px;
+            width: 220px;
+          }
+
+          &.appstore {
+            background-image: url('../assets/images/appstore.jpg');
+            height: 79px;
+            width: 220px;
+          }
+
+          &.playstore {
+            background-image: url('../assets/images/playstore.jpg');
+            height: 72px;
+            width: 220px;
+          }
+        }
+      }
+    }
+  }
+}

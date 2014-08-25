@@ -1,0 +1,36 @@
+#main-course {
+  width: 100%;
+
+  .container {
+    background-color: #FFC230;
+    margin: 0 auto;
+    width: 1246px;
+
+    .slogan {
+      color: #000;
+      font-size: 20px;
+      padding: 20px;
+    }
+
+    .course-container {
+      margin: 0 auto;
+      width: 1060px;
+
+      .course {
+        background-color: #FFF;
+        background-position: center right;
+        background-repeat: no-repeat;
+        float: left;
+        height: 140px;
+        padding: 5px 10px;
+        width: 192px;
+
+        &.drum { background-image: url('../assets/images/course_drum.jpg') }
+        &.elecguitar { background-image: url('../assets/images/course_elecguitar.jpg') }
+        &.guitar { background-image: url('../assets/images/course_guitar.jpg') }
+        &.piano { background-image: url('../assets/images/course_piano.jpg') }
+        &.violin { background-image: url('../assets/images/course_violin.jpg') }
+      }
+    }
+  }
+}

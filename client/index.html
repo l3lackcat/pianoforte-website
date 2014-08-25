@@ -27,7 +27,12 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div ng-view=""></div>
+    <div>
+      <div ng-include="'components/header/header.html'"></div>
+      <div ng-include="'components/top-banner/top-banner.html'"></div>
+      <div id="main-content" ng-view></div>
+      <div ng-include="'components/footer/footer.html'"></div>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -62,16 +67,17 @@
         <!-- build:js({.tmp,client}) app/app.js -->
         <script src="app/app.js"></script>
           <!-- injector:js -->
-          <script src="app/contact-us/contact-us.controller.js"></script>
-          <script src="app/contact-us/contact-us.js"></script>
-          <script src="app/english-page/english-page.controller.js"></script>
-          <script src="app/english-page/english-page.js"></script>
-          <script src="app/home/home.controller.js"></script>
-          <script src="app/home/home.js"></script>
-          <script src="app/our-course/our-course.controller.js"></script>
-          <script src="app/our-course/our-course.js"></script>
-          <script src="app/our-school/our-school.controller.js"></script>
-          <script src="app/our-school/our-school.js"></script>
+          <script src="app/views/contact-us/contact-us.controller.js"></script>
+          <script src="app/views/contact-us/contact-us.js"></script>
+          <script src="app/views/english-page/english-page.controller.js"></script>
+          <script src="app/views/english-page/english-page.js"></script>
+          <script src="app/views/home/home.controller.js"></script>
+          <script src="app/views/home/home.js"></script>
+          <script src="app/views/our-course/our-course.controller.js"></script>
+          <script src="app/views/our-course/our-course.js"></script>
+          <script src="app/views/our-school/our-school.controller.js"></script>
+          <script src="app/views/our-school/our-school.js"></script>
+          <script src="components/footer/footer.controller.js"></script>
           <script src="components/header/header.controller.js"></script>
           <script src="components/navbar/navbar.controller.js"></script>
           <!-- endinjector -->
