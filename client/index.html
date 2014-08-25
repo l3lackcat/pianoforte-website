@@ -47,12 +47,33 @@
 
     <!-- build:js(client) app/vendor.js -->
       <!-- bower:js -->
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/json3/lib/json3.js"></script>
+      <script src="bower_components/angular-resource/angular-resource.js"></script>
+      <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+      <script src="bower_components/angular-route/angular-route.js"></script>
+      <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+      <script src="bower_components/lodash/dist/lodash.compat.js"></script>
       <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,client}) app/app.js -->
         <script src="app/app.js"></script>
           <!-- injector:js -->
+          <script src="app/contact-us/contact-us.controller.js"></script>
+          <script src="app/contact-us/contact-us.js"></script>
+          <script src="app/english-page/english-page.controller.js"></script>
+          <script src="app/english-page/english-page.js"></script>
+          <script src="app/home/home.controller.js"></script>
+          <script src="app/home/home.js"></script>
+          <script src="app/our-course/our-course.controller.js"></script>
+          <script src="app/our-course/our-course.js"></script>
+          <script src="app/our-school/our-school.controller.js"></script>
+          <script src="app/our-school/our-school.js"></script>
+          <script src="components/header/header.controller.js"></script>
+          <script src="components/navbar/navbar.controller.js"></script>
           <!-- endinjector -->
         <!-- endbuild -->
 </body>

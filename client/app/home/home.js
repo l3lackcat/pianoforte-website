@@ -4,7 +4,7 @@ angular.module('pianoforteApp')
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'app/main/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'app/home/home.html',
+        controller: 'HomeCtrl'
       });
   });

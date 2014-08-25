@@ -1,0 +1,25 @@
+<header ng-controller="HeaderCtrl">
+  <div class="container">
+    <div class="row">
+      <div class="col logo-container">
+        <a href="/" id="logo" title="Pianoforte The School of Music">
+          <span>Pianoforte The School of Music</span>
+          <!-- <img src="images/logo.gif" alt="Piano Forte" title="Pianoforte The School of Music"> -->
+        </a>
+      </div>
+      <div class="col main-menu-container">
+        <div class="sub-nav">
+          <a class="sub-nav-fb" href="https://www.facebook.com/Pianoforteclub" target="_blank" title="Piano Forte Facebook Fanpage"></a>
+          <a class="sub-nav-email" href="mailto:pianofortethai@gmail.com" target="_blank" title="contact us"></a>
+        </div>
+        <div class="main-nav">
+          <ul>
+            <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
+              <a href="{{ item.link }}">{{ item.title }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
